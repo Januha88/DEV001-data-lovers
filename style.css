@@ -1,0 +1,187 @@
+body {
+  background: linear-gradient(to top, #093637, #44A08D);
+}
+.bienvenida{
+  display: flex;
+  flex-direction: column;
+}
+.contenedor1 {
+  background: #44A08D; 
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  height: 750px;
+}
+.imagenUno{
+  align-self:auto;
+  margin-top: 70px;
+  width: 100x;
+  height: 100px;
+}
+.imagenDos{
+  margin-top: 60px;
+  align-self: center;
+  width: 250x;
+  height: 150px;
+}
+.imagenPikachu{
+  margin-top: 20px;
+  width: 250x;
+  height: 700px;
+}
+.styleBtn1 {
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  height: 45px;
+  width: 300px;
+  margin-top: 60px;
+  background-color: #2c6bbb;
+  font-family:Arial, Helvetica, sans-serif;;
+  font-size: 15px;
+    color:  #f4f56e;
+}
+.input {
+  text-align: center;
+  align-self: center;
+  margin-top: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  height: 35px;
+  width: 180px;
+  margin-left: 25px;
+}
+
+.poke-container {
+  background: #44A08D; 
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 100%;
+  border-color: 20px #000;
+  margin-top: 10px;
+}
+.tarjetas{
+  align-items:flex-end;
+  margin: 10px;
+  background-color: transparent;
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;  
+  perspective: 2000px;
+}
+.pokemonCard {
+  background-image:linear-gradient(180deg, #9FB7F5 0, #6C90D8 50%, #2C6BBB 100%); 
+  position: relative;
+  height: 260px;
+  width: 200px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 5px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.tarjetas:hover .pokemonCard {
+  transform: rotateY(-180deg);
+}
+.pokemonCard-front,
+.pokemonCard-back {
+  align-items: center;
+  display: block;
+  position: absolute;
+  height: 260px;
+  width: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.pokemonCard-front {
+  margin-top: 10px;
+  align-items: center;
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;
+  background-image:linear-gradient(180deg, #9FB7F5 0, #6C90D8 50%, #2C6BBB 100%); 
+  color: black;
+}
+.pokemonCard-back {
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #98d4ff;
+  position: absolute;
+  display: grid;
+  transform: rotateY(180deg);
+}
+.numero{
+  background-color:transparent;
+  height: 30px;
+  color: antiquewhite;
+  text-shadow: 
+                0 6px 1px rgba(0, 0, 0, .1), 
+                0 0 5px rgba(0, 0, 0, .1), 
+                0 1px 3px rgba(0, 0, 0, .3), 
+                0 3px 5px rgba(0, 0, 0, .2), 
+                0 5px 10px rgba(0, 0, 0, .25), 
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15) ;   
+}
+.selectores{
+  padding: 5px;
+  background: transparent ;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.select{
+  padding-left: 3px;
+  background-color:#4169E1; 
+  margin-left: 10px;
+  height: 50px;
+  width: 180px;
+  cursor: pointer;
+  outline: none;
+  border: 3px;
+    color: #ece45b;
+  border-radius: 10px;
+  font-family: Geo;
+  font-size: 15px;
+  color: #ece45b;
+}
+.select:hover{
+  background-color: #6495ED;
+  border: 3px solid  #ece45b;
+    color: #000;
+}
+.nombre{
+  font-family: Geneva;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  font-weight: 200%;
+  color: #f2f24ef4;
+  font-weight: bold;
+  text-shadow: 
+                0 6px 1px rgba(0, 0, 0, .1), 
+                0 0 5px rgba(0, 0, 0, .1), 
+                0 1px 3px rgba(0, 0, 0, .3), 
+                0 3px 5px rgba(0, 0, 0, .2), 
+                0 5px 10px rgba(0, 0, 0, .25), 
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15) ;   
+}
+.tipo{
+  font-family: Geneva;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: #000;
+}
+.pokeInfo{
+  font-family: Geneva;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #000;
+}

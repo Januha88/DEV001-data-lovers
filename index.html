@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <!-- Primera Pantalla -->
+  <div id="contenedor1" class="contenedor1">
+    <div class="bienvenida">
+      <img class="imagenUno" src="https://fontmeme.com/permalink/221109/42381b5f3866d5e0230c6a8063f2d724.png">
+      <img class="imagenDos" src="https://fontmeme.com/permalink/221109/b3ef3cabd9dd2f9377a61e7678502057.png">
+      <button type="submit" id="conocerMas" class="styleBtn1"><strong>Conoce todos los Pokémones</strong></button>
+    </div>
+    <img class="imagenPikachu"
+      src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/932c7-pikachu-saltando-png.png?resize=900%2C900&ssl=1">
+  </div>
+
+  <!-- Segunda Pantalla, mostrando todos los pokemones -->
+  <div class="selectores" autofocus>
+    <select class="select" autofocus name="tipoDePokemon" id="selectTipoDePokemon">
+      <option value=""><strong>Filtrar por Tipo</strong></option>
+      <option value="grass">Grass</option>
+      <option value="ground">Ground</option>
+      <option value="fire">Fire</option>
+      <option value="flying">Flying</option>
+      <option value="water">Water</option>
+      <option value="bug">Bug</option>
+      <option value="normal">Normal</option>
+      <option value="electric">Electric</option>
+      <option value="psychic">Psychic</option>
+      <option value="fairy">Fairy</option>
+      <option value="steel">Steel</option>
+      <option value="rock">Rock</option>
+      <option value="fighting">Fighting</option>
+      <option value="dark">dark</option>
+      <option value="ice">Ice</option>
+    </select>
+
+    <select id="ordenarPorNombre" class="select" autofocus>
+      <option value="">Ordenar por Nombre</option>
+      <option value="orderUp">A-Z</option>
+      <option value="orderDown">Z-A</option>
+    </select>
+    <select id="orderNumber" class="select" autofocus>
+      <option value="">Ordenar por Número</option>
+      <option value="order-Up">Menor a Mayor</option>
+      <option value="order-Down">Mayor a Menor</option>
+    </select>
+  </div>
+  <div id="root" class="poke-container" style="display:flex ;"> </div>
+
+
+
+  <script src="main.js" type="module"></script>
+
+
+
+
+</body>
+
+</html>
